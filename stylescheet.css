@@ -1,0 +1,97 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: UGLY;
+    src: url("/resources/Danfo/Danfo-Regular-VariableFont_ELSH.ttf");
+}
+@font-face {
+    font-family: PIXEL;
+    src: url("/resources/Pixelify_Sans/PixelifySans-VariableFont_wght.ttf");
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.score
+{
+    height: 10vh;
+    display: flex;
+    width: 75vw;
+    align-self: center;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2.5vw;
+    font-family: PIXEL;
+}
+
+.title
+{
+    font-size: 4vw;
+    height: 10vh;
+    text-align: center;
+    font-family: UGLY;
+    color: rgb(255, 255, 255);
+    background-color: rgb(36, 36, 36);
+}
+
+.ring
+{
+    display: flex;
+    width: 100vw;
+    height: 60vh;
+    align-items: center;
+    margin: auto;
+    background-color: rgb(219, 22, 47);
+    justify-content: space-around;
+}
+
+.table
+{
+    display: flex;
+    margin: auto;
+    width: 40%;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+    height: 75%;
+    box-shadow: 1.5vw 1.5vw 0px black;
+}
+
+.options
+{
+    display: flex;
+    align-self: center;
+    width: 40vw;
+    align-items: center;
+    justify-content: space-around;
+    height: 15vh;
+}
+
+.select
+{
+    font-size: 2.25vw;
+    padding: 1%;
+    width: 25%;
+    font-family: PIXEL;
+    height: 75%;
+    border: 0;
+    box-shadow: 0.25em 0.25em 0px black;
+    background-color: rgb(139, 95, 191);
+    position: relative;
+}
+
+.select:active
+{
+    top: 0.125em;
+    left: 0.125em;
+    box-shadow: 0.125em 0.125em 0px black;
+}
+
