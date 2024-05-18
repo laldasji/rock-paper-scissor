@@ -8,30 +8,38 @@
     <link rel="stylesheet" href="stylescheet.css">
 </head>
 <body>
-    <script src="script.js"></script>
     <div class="title">
-        ROCK PAPER SCISSOR
+        ROCK! PAPER! SCISSOR!
     </div>
-
     <div class="score">
-        <div class="player_score">
-            Player: 0
-        </div>
-        <div class="computer_score">
-            Computer: 0
-        </div>
+            <div id="player_score">
+                <!-- Player: 0 -->
+            </div>
+            <div id="computer_score">
+                <!-- Computer: 0 -->
+            </div>
     </div>
-
+    <div class="score" id="result"></div>
+    
     <div class="ring">
-        <div class="table p1">Here, human</div>
-        <div class="table p2">Here, computer</div>
+        <div class="table" id="p1">HERE, HUMAN</div>
+        <div class="table" id="p2">HERE, COMPUTER</div>
     </div>
-
+    
     <div class="options">
-        <button class="select rock">ROCK</button>
-        <button class="select paper">PAPER</button>
-        <button class="select scissor">SCISSOR</button>
+        <button class="select" id="rock">ROCK</button>
+        <button class="select" id="paper">PAPER</button>
+        <button class="select" id="scissor">SCISSOR</button>
     </div>
+    <div id="try-again" style="display: none;">
+        <div id="try-text">
 
+        </div>
+
+        <button id="redo" class="select" style="width: 20%; height: 20%;" onclick="reload()">
+            Retry
+        </button>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
