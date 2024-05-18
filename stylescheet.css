@@ -6,11 +6,11 @@
 
 @font-face {
     font-family: UGLY;
-    src: url("/resources/Danfo/Danfo-Regular-VariableFont_ELSH.ttf");
+    src: url("resources/Danfo/Danfo-Regular-VariableFont_ELSH.ttf");
 }
 @font-face {
     font-family: PIXEL;
-    src: url("/resources/Pixelify_Sans/PixelifySans-VariableFont_wght.ttf");
+    src: url("resources/Pixelify_Sans/PixelifySans-VariableFont_wght.ttf");
 }
 
 body
