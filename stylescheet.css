@@ -67,6 +67,12 @@ body
     box-shadow: 1.5vw 1.5vw 0px black;
 }
 
+.table img
+{
+    max-width: 90%;
+    height: auto;
+}
+
 .options
 {
     display: flex;
@@ -79,7 +85,7 @@ body
 
 .select
 {
-    font-size: 2.25vw;
+    font-size: 200%;
     padding: 1%;
     width: 25%;
     font-family: PIXEL;
@@ -88,6 +94,30 @@ body
     box-shadow: 0.25em 0.25em 0px black;
     background-color: rgb(139, 95, 191);
     position: relative;
+}
+
+@media (max-aspect-ratio: 1/1)
+{
+    .title
+    {
+        font-size: 6.5vw;
+    }
+    .score
+    {
+        font-size: 5vw;
+    }
+    .table
+    {
+        font-size: 5vw;
+    }
+    .options
+    {
+        width: 100vw;
+    }
+    .select
+    {
+        font-size: 5vw;
+    }
 }
 
 .select:active
