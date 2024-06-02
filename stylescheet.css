@@ -21,7 +21,7 @@ body
 
 .score
 {
-    height: 7vh;
+    height: 7svh;
     display: flex;
     width: 75vw;
     align-self: center;
@@ -34,7 +34,7 @@ body
 .title
 {
     font-size: 4vw;
-    height: 10vh;
+    height: 10svh;
     text-align: center;
     font-family: UGLY;
     color: rgb(255, 255, 255);
@@ -45,7 +45,7 @@ body
 {
     display: flex;
     width: 100vw;
-    height: 60vh;
+    height: 60svh;
     align-items: center;
     margin: auto;
     background-color: rgb(219, 22, 47);
@@ -67,6 +67,7 @@ body
     box-shadow: 1.5vw 1.5vw 0px black;
 }
 
+
 .table img
 {
     max-width: 90%;
@@ -80,7 +81,7 @@ body
     width: 40vw;
     align-items: center;
     justify-content: space-around;
-    height: 15vh;
+    height: 15svh;
 }
 
 .select
@@ -131,7 +132,7 @@ body
 {
     position:fixed;
     width: 100vw;
-    height: 100vh;
+    height: 100svh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -146,4 +147,11 @@ body
 {
     background-color: rgba(0, 0, 0, 0.4);
     padding: 1vw;
+}
+
+#redo
+{
+    width: 20%;
+    height: 20%;
+    font-size: 80%;
 }

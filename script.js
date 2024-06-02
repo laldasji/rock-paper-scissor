@@ -26,26 +26,26 @@ function getComputer(player_choice)
     add computer's choice to display!
     */
     let res = 0;
-    let img1 = document.createElement('img');
-    let img2 = document.createElement('img');
+    let playerChoiceImage = document.createElement('img');
+    let computerChoiceImage = document.createElement('img');
     let path = "resources/images/rock-paper-scissor/";
     if (player_choice == "rock")
     {
-        img1.src = path + "player-rock.png";
+        playerChoiceImage.src = path + "player-rock.png";
         if (computer_choice === 1) res = 2;
         else if (computer_choice === 2) res = 1;
         else res = 0;
     }
     else if (player_choice == "paper")
     {
-        img1.src = path + "player-paper.png";
+        playerChoiceImage.src = path + "player-paper.png";
         if (computer_choice === 1) res = 0;
         else if (computer_choice === 2) res = 2;
         else res = 1;
     }
     else if (player_choice == "scissor")
     {
-        img1.src = path + "player-scissor.png";
+        playerChoiceImage.src = path + "player-scissor.png";
         if (computer_choice === 1) res = 1;
         else if (computer_choice === 2) res = 0;
         else res = 2;
@@ -58,13 +58,13 @@ function getComputer(player_choice)
         choice = "-paper.png";
     if (computer_choice == 3)
         choice = "-scissor.png";
-    img2.src = path + "computer" + choice;
+    computerChoiceImage.src = path + "computer" + choice;
     
     p1.innerHTML = "";
     p2.innerHTML = "";
 
-    p1.appendChild(img1);
-    p2.appendChild(img2);
+    p1.appendChild(playerChoiceImage);
+    p2.appendChild(computerChoiceImage);
     return res;
 }
 
